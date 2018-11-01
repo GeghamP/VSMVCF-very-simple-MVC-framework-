@@ -10,8 +10,6 @@ $(document).ready(function(){
 			cache: false,
 			processData: false,
 			success: function(result){
-				console.log(result);
-				//json = jQuery.parseJSON(result.mek);
 				json = JSON.parse(result);
 				if(json.url){
 					window.location.href = json.url;
